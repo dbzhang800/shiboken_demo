@@ -61,5 +61,5 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 # =============================================================================================
 # !!! End of dubious section.
 
-add_subdirectory(democppbind)
-add_subdirectory(demoqtbind)
+add_subdirectory(democpplibbinding)
+add_subdirectory(demoqtlibbinding)

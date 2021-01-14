@@ -1,7 +1,7 @@
 from PySide2 import QtWidgets
 
-import demoqtbind
+import demoqtlibbinding
 
 a = QtWidgets.QApplication()
 
-c = demoqtbind.DemoQtClass()
+c = demoqtlibbinding.DemoQtClass()

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<typesystem package="democppbind">
+<typesystem package="democpplibbinding">
     <object-type name="DemoCppClass">
     </object-type>
 </typesystem>

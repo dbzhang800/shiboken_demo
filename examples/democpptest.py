@@ -1,6 +1,6 @@
 # Force load proper library such as shiboken
 import PySide2
 
-import democppbind
+import democpplibbinding
 
-a = democppbind.DemoCppClass()
+a = democpplibbinding.DemoCppClass()
