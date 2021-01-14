@@ -11,12 +11,20 @@
     #define DEMOCPPLIB_API
 #endif
 
+#include <string>
 
 class DEMOCPPLIB_API DemoCppClass
 {
 public:
     DemoCppClass();
     ~DemoCppClass();
+
+    void setName(const std::string &name);
+    std::string name() const;
+
+    static std::string className();
+
 private:
+    std::string m_name;
 };
 

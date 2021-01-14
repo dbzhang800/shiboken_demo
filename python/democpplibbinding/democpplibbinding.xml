@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <typesystem package="democpplibbinding">
+    <primitive-type name="std::string"/>
     <object-type name="DemoCppClass">
     </object-type>
 </typesystem>
