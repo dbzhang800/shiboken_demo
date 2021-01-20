@@ -27,6 +27,12 @@ public:
     std::vector<int> stdValues() const;
     void setStdValues(const std::vector<int> &values);
 
+    static DemoQtClass *getDemoQtClass(const QString &id);
+    static DemoQtClass *getDemoQtClass(const QString &id, int dump);
+
+    // Cannot extracted by shiboken when std::function is used as argument
+    static DemoQtClass *getDemoQtClass(const QString &id, const std::function<bool()> &filter);
+
 private:
     int m_value;
     QVector<int> m_values;

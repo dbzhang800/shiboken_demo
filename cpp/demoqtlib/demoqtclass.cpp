@@ -38,3 +38,18 @@ void DemoQtClass::setStdValues(const std::vector<int> &values)
 {
     m_values = QVector<int>(values.begin(), values.end());
 }
+
+DemoQtClass *DemoQtClass::getDemoQtClass(const QString &id)
+{
+    return new DemoQtClass();
+}
+
+DemoQtClass *DemoQtClass::getDemoQtClass(const QString &id, int dump)
+{
+    return getDemoQtClass(id);
+}
+
+DemoQtClass *DemoQtClass::getDemoQtClass(const QString &id, const std::function<bool()> &filter)
+{
+    return new DemoQtClass();
+}

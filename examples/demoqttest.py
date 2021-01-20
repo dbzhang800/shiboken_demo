@@ -4,7 +4,7 @@ import demoqtlibbinding
 
 a = QtWidgets.QApplication()
 
-q = demoqtlibbinding.DemoQtClass()
+q = demoqtlibbinding.DemoQtClass.getDemoQtClass("")
 q.setValue(110)
 print(q.value())
 q.setValues((1,2,3))
