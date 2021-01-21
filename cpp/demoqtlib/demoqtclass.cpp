@@ -9,6 +9,10 @@ DemoQtClass::~DemoQtClass()
 {
 }
 
+void DemoQtClass::testForwardDeclare(const QRectF &rect)
+{
+}
+
 int DemoQtClass::value() const
 {
     return m_value;

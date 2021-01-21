@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QVector>
+#include <QString>
 #include <vector>
 
 #if DEMOQTLIB_BUILD
@@ -11,12 +12,16 @@
 #define DEMOQTLIB_API Q_DECL_IMPORT
 #endif
 
+class QRectF;
+
 class DEMOQTLIB_API DemoQtClass : public QObject
 {
     Q_OBJECT
 public:
     DemoQtClass();
     ~DemoQtClass();
+
+    void testForwardDeclare(const QRectF &rect);
 
     int value() const;
     void setValue(int value);
